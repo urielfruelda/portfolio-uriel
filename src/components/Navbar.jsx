@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-scroll'
+import profileImage from '../assets/1.png'  
 import { motion } from 'framer-motion'
 
 const Navbar = () => {
@@ -37,7 +38,7 @@ const Navbar = () => {
         text-xl items-center px-4 md:px-12 h-20'>
 
             <Link to="hero" smooth={true} offset={50} duration={500} className="font-bold">
-                <img src="/src/assets/1.png" alt="E.Uriel" className="h-10  rounded-full" />
+            <img src={profileImage} alt="E.Uriel" className="h-10 rounded-full" />
             </Link>
 
             <ul className='hidden md:flex gap-12 z-10 cursor-pointer'>
