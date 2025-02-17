@@ -1,7 +1,7 @@
 import React from 'react';
-import sunhilllms from "../assets/sunhilllms.png"
-import project2 from "../assets/project2.png"
-import project4 from "../assets/project4.png"
+import sunhilllms from "../assets/sunhill.png"
+import project2 from "../assets/quantum.png"
+import project4 from "../assets/pharmalert.png"
 import project5 from "../assets/project5.png"
 import project6 from "../assets/project6.png"
 import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai'
@@ -19,40 +19,40 @@ const projects = [
     },
     {
       img: project2,
-      title: "Quantum DIary",
-      description: "A fullstack application built with Node.js and MongoDB.",
+      title: "Quantum Diary",
+      description: "A static website for promoting milk consumption.",
       links: {
         site: "https://urielfruelda.github.io/quantumdairy/",
-        github: "#",
+        github: "https://github.com/urielfruelda/quantumdairy",
       },
     },
     {
       img: project4,
-      title: "Project #3",
+      title: "PharmAlert",
       description: "An e-commerce platform with various features.",
       links: {
         site: "#",
-        github: "#",
+        github: "https://github.com/urielfruelda/PharmAlert",
       },
     },
-    {
-      img: project5,
-      title: "Project #4",
-      description: "A mobile-friendly application using React Native.",
-      links: {
-        site: "#",
-        github: "#",
-      },
-    },
-    {
-      img: project6,
-      title: "Project #5",
-      description: "A data visualization project using D3.js and other libraries.",
-      links: {
-        site: "#",
-        github: "#",
-      },
-    },
+    // {
+    //   img: project5,
+    //   title: "Project #4",
+    //   description: "A mobile-friendly application using React Native.",
+    //   links: {
+    //     site: "#",
+    //     github: "#",
+    //   },
+    // },
+    // {
+    //   img: project6,
+    //   title: "Project #5",
+    //   description: "A data visualization project using D3.js and other libraries.",
+    //   links: {
+    //     site: "#",
+    //     github: "#",
+    //   },
+    // },
   ]
 
 const Portfolio = () => {

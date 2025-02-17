@@ -31,7 +31,11 @@ const Experience = () => {
   return (
     <div className='p-8 max-w-[600px] mx-auto'>
         <h1 className='text-4xl text-gray-200 font-bold text-center mb-12'>Experience</h1>
-        <motion.div
+
+        <p className='text-gray-400 text-center mb-8'>
+        🚧 This section is currently under development. Please check back later for updates. 🚧
+        </p>
+        {/* <motion.div
         className='space-y-8'
         initial="hidden"
         animate="visible"
@@ -53,7 +57,7 @@ const Experience = () => {
               </Reveal>
           ))}
 
-        </motion.div>
+        </motion.div> */}
 
     </div>
   )
