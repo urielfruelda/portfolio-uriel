@@ -30,7 +30,7 @@ const projects = [
     {
         img: project4,
         title: "PharmAlert",
-        description: "An inventory management system with real-time monitoring of expired medicines and point-of-sale feature.",
+         description: "An inventory management system with real-time monitoring of expired medicines and point-of-sale feature.",
         links: {
             site: "#",
             github: "https://github.com/urielfruelda/PharmAlert",

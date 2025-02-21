@@ -5,7 +5,8 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
-import ParticlesBackground from "./components/ParticlesBackground"; // Import the component
+import ParticlesBackground from "./components/ParticlesBackground"; 
+import Certification from "./components/Certifications";  
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Skills />
         <Portfolio />
         <Experience />
+        <Certification />
         <Contact />
         <Footer />
       </div>

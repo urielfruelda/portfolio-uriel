@@ -8,6 +8,7 @@ import {
   AiOutlineInstagram,
   AiOutlineMail,
   AiOutlineLinkedin,
+  AiFillFileExcel,
 } from "react-icons/ai";
 import {
   DiCss3,
@@ -17,12 +18,14 @@ import {
   DiReact,
   DiDjango,
   DiPython,
+  DiPostgresql,
+  DiMysql,
 } from "react-icons/di";
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="mt-40 md:mt-24 max-w-[1200px] mx-auto ">
+    <div className="mt-40 md:mt-24 max-w-[1200px] mx-auto hero">
       <div className="grid md:grid-cols-2 place-items-center gap-8">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -123,6 +126,10 @@ const Hero = () => {
                 <DiDjango className="text-green-500 mx-2" />
                 <DiGithubBadge className="text-gray-200 mx-2" />
                 <DiPython className="text-blue-700 mx-2" />
+                <AiFillFileExcel className="text-green-700 mx-2" />
+                <DiMysql className="text-red-500 mx-2" />
+                <DiPostgresql className="text-blue-500 mx-2" />
+
             </div>
 
         </motion.div>
