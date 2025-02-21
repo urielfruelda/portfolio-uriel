@@ -11,8 +11,8 @@ import Certification from "./components/Certifications";
 export default function App() {
   return (
     <div className=" min-h-screen">
-      <ParticlesBackground /> {/* Particles in the background */}
-      <div className="relative z-10"> {/* Ensures content is above particles */}
+      <ParticlesBackground />
+      <div className="relative z-10"> 
         <Navbar />
         <Hero />
         <Skills />

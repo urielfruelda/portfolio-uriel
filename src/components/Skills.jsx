@@ -6,7 +6,7 @@ import {
   DiBootstrap,
   DiJavascript1,
   DiReact,
-  DiNodejsSmall,
+  DiMysql,
   DiMongodb,
   DiGithubBadge,
 } from "react-icons/di"
@@ -27,7 +27,7 @@ const skills = [
     {
       category: 'Fullstack',
       technologies: [
-        { name: 'Node Js', icon: <DiNodejsSmall className='text-green-500' /> },
+        { name: 'MySQL', icon: <DiMysql className='text-green-500' /> },
         { name: 'MongoDB', icon: <DiMongodb className='text-green-600' /> },
         { name: 'React', icon: <DiReact className='text-blue-500' /> },
         { name: 'GitHub', icon: <DiGithubBadge className='text-gray-600' /> },
