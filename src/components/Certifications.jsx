@@ -45,7 +45,7 @@ const Modal = ({ isOpen, onClose, certification }) => {
                 <iframe
                     src={`https://drive.google.com/file/d/${certification.link.split('/d/')[1].split('/view')[0]}/preview`}
                     width="100%"
-                    height="500px"
+                    height={window.innerWidth < 768 ? 250 : 500}
                     title="Certification"
                     className="border-0 rounded-lg"
                 />
