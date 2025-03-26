@@ -160,7 +160,18 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             className="flex flex-row items-center"
           >
-            {slides[currentSlide]}
+            {slides[currentSlide].map((icon) => (
+              <motion.span
+                key={icon.key}
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-6xl md:text-8xl"
+              >
+                {icon}
+              </motion.span>
+            ))}
           </motion.div>
         </AnimatePresence>
       </motion.div>
