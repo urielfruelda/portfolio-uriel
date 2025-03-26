@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import sunhilllms from "../assets/sunhill.png";
 import project2 from "../assets/quantum.png";
 import project4 from "../assets/pharmalert.png";
-import project5 from "../assets/project5.png";
+import project5 from "../assets/report.jpg";
 import project6 from "../assets/project6.png";
 import { AiOutlineGithub, AiOutlineMail } from 'react-icons/ai';
 import Reveal from './Reveal';
@@ -40,6 +40,15 @@ const projects = [
             reason: "The backend infrastructure is still being optimized for scalability, and the responsiveness of the frontend is still being improved.",
             timeline: "Still in development",
             contact: "mailto:urielfruelda@gmail.com",
+        },
+    },
+    {
+        img: project5,
+        title: "Financial Report Dashboard",
+         description: "The dashboard presents a high-level summary of financial performance, making it easier to track business growth over time.",
+        links: {
+            site: "https://medium.com/@urielfruelda/financial-report-dashboard-my-experience-with-datasense-analytics-free-training-2fc6feb2a573",
+            // github: "https://github.com/urielfruelda/phantom-repo",
         },
     },
     // Add more projects as needed
