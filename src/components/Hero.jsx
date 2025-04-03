@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import profilepic from "../assets/profpic.png";
+import profilepic from "../assets/uriel.png";
 import { TypeAnimation } from "react-type-animation";
 import Button from "./Button";
 import ShinyEffect from "./ShinyEffect";
@@ -132,7 +132,7 @@ const Hero = () => {
 
         <motion.img
           src={profilepic}
-          className="w-[300px] md:w-[350px]"
+          className="w-[400px] md:w-[500px]"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
