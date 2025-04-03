@@ -5,6 +5,13 @@ import Reveal from './Reveal';
 // Certifications data
 const certifications = [
     {
+        title: "Business Intelligence with Power BI Desktop (Zero to Low Code Dashboard)",
+        description: "Certificate of Completion in Business Intelligence with Power BI Desktop (Zero to Low Code Dashboard) by Data Analytics Philippines",
+        issuedBy: "Data Analytics Philippines",
+        issueDate: "March 2025",
+        link: "https://drive.google.com/file/d/1EvnWypkI1GRtduWZAhdoPxHMhjDTEG61/view?usp=sharing",
+    },
+    {
         title: "Microsoft Office Specialist: Excel Associate Certification Training",
         description: "Certificate of Completion in Microsoft Office Specialist: Excel Associate Certification Training by Data Analytics Philippines",
         issuedBy: "Data Analytics Philippines",

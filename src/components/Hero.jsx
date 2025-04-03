@@ -56,8 +56,8 @@ const Hero = () => {
   }, [slides.length]);
 
   return (
-    <div className="mt-40 md:mt-24 max-w-[1200px] mx-auto hero">
-      <div className="grid md:grid-cols-2 place-items-center gap-8">
+    <div className="mt-40 md:mt-24 mr-54 max-w-[1200px] mx-auto hero">
+      <div className="grid md:grid-cols-2  place-items-center gap-8">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
