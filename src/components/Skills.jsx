@@ -7,7 +7,7 @@ import {
   DiJavascript1,
   DiReact,
   DiMysql,
-  DiMongodb,
+  DiPostgresql,
   DiGithubBadge,
 } from "react-icons/di"
 import Reveal from "./Reveal"
@@ -28,7 +28,7 @@ const skills = [
       category: 'Fullstack',
       technologies: [
         { name: 'MySQL', icon: <DiMysql className='text-green-500' /> },
-        { name: 'MongoDB', icon: <DiMongodb className='text-green-600' /> },
+        { name: 'PostgreSQL', icon: <DiPostgresql className='text-blue-700' /> },
         { name: 'React', icon: <DiReact className='text-blue-500' /> },
         { name: 'GitHub', icon: <DiGithubBadge className='text-gray-600' /> },
       ],
