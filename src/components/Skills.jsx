@@ -9,6 +9,7 @@ import {
   DiMysql,
   DiPostgresql,
   DiGithubBadge,
+  DiDjango,
 } from "react-icons/di"
 import Reveal from "./Reveal"
 
@@ -20,17 +21,17 @@ const skills = [
         { name: 'CSS', icon: <DiCss3 className='text-blue-600' /> },
         { name: 'Sass', icon: <DiSass className='text-pink-600' /> },
         { name: 'Bootstrap', icon: <DiBootstrap className='text-purple-600' /> },
-        { name: 'JavaScript', icon: <DiJavascript1 className='text-yellow-500' /> },
         { name: 'React', icon: <DiReact className='text-blue-500' /> },
       ],
     },
     {
       category: 'Fullstack',
       technologies: [
-        { name: 'MySQL', icon: <DiMysql className='text-green-500' /> },
+        { name: 'MySQL', icon: <DiMysql className='text-blue-500' /> },
         { name: 'PostgreSQL', icon: <DiPostgresql className='text-blue-700' /> },
-        { name: 'React', icon: <DiReact className='text-blue-500' /> },
         { name: 'GitHub', icon: <DiGithubBadge className='text-gray-600' /> },
+        { name: 'JavaScript', icon: <DiJavascript1 className='text-yellow-500' /> },
+        { name: 'Django', icon: <DiDjango className='text-green-500' /> },
       ],
     },
   ]
