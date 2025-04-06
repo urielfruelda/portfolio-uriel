@@ -20,7 +20,7 @@ export default function App() {
   }, []);
   useEffect(() => {
     if (!loading) {
-      const vantaEffect = window.VANTA.BIRDS({
+      const vantaEffect = window.VANTA.NET({
         el: vantaRef.current,
         mouseControls: true,
         touchControls: true,
@@ -28,7 +28,10 @@ export default function App() {
         minHeight: 200.00,
         minWidth: 200.00,
         scale: 1.00,
-        scaleMobile: 1.00
+        scaleMobile: 1.00,
+        points: 7.00,
+        maxDistance: 21.00,
+        spacing: 19.00
       });
 
       return () => {
@@ -51,12 +54,13 @@ export default function App() {
               left: 0,
               width: '100%',
               height: '100%',
-              zIndex: -1
+              zIndex: 0,
+              blur: 3
             }}
           />
           
           {/* Content */}
-          <div className="relative z-10">
+          <div className="relative z-30">
             <Navbar />
             <Hero />
             <Skills />
