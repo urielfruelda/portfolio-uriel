@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Button = () => {
     const handleClick = () => {
-        window.open("https://drive.google.com/file/d/1mWhSZbzxvSgyE2fBt1W3dosogElGYfSz/view?usp=sharing", "_blank");
+        window.open("https://drive.google.com/file/d/1IDiri0tijegEoyAC4mBlK_P2SqmiaM7y/view?usp=sharing", "_blank");
     };
 
     return (

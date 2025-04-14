@@ -100,11 +100,8 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1 }}
             className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
           >
-            I'm an aspiring Business Analyst with a strong passion for technology
-            and innovation, constantly seeking ways to improve my skills and stay
-            up-to-date with the latest trends in the industry.
+            I'm an aspiring Data Analyst or Business Analyst with a strong passion for technology and innovation, constantly seeking ways to improve my skills and stay up-to-date with the latest trends in the industry.
           </motion.p>
-
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
