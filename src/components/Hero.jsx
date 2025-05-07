@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import profilepic from "../assets/uriel.png";
+import badgeImage from "../assets/data-analytics-essentials.png";
+import badgeImage2 from "../assets/aws-academy-cloud-foundations.png";
+ // Import your badge image
 import { TypeAnimation } from "react-type-animation";
 import Button from "./Button";
 import ShinyEffect from "./ShinyEffect";
@@ -40,6 +43,19 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [];
   const iconsPerSlide = 5;
+  const [expandedBadge, setExpandedBadge] = useState(null);
+  
+
+  const handleBadgeClick = (badge) => {
+    setExpandedBadge(badge);
+  };
+
+  const closeExpandedView = (e) => {
+    // Only close if clicking on the overlay background, not the image itself
+    if (e.target === e.currentTarget) {
+      setExpandedBadge(null);
+    }
+  };
 
   // Group icons into slides
   for (let i = 0; i < icons.length; i += iconsPerSlide) {
@@ -57,6 +73,39 @@ const Hero = () => {
 
   return (
     <div className="mt-40 md:mt-24 mr-54 max-w-[1200px] mx-auto hero">
+       <AnimatePresence>
+        {expandedBadge && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+            onClick={closeExpandedView}
+          >
+            <motion.button 
+              className="absolute top-6 right-6 text-white text-3xl z-50 hover:text-purple-400 transition-colors"
+              whileHover={{ scale: 1.2 }}
+              onClick={() => setExpandedBadge(null)}
+            >
+              ✕
+            </motion.button>
+            <motion.div
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 100 }}
+              className="relative max-w-full max-h-full"
+            >
+              <img 
+                src={expandedBadge === 'data' ? badgeImage : badgeImage2} 
+                alt={expandedBadge === 'data' ? "Data Analytics Essentials" : "AWS Cloud Foundations"} 
+                className="max-w-[90vw] max-h-[80vh] object-contain rounded-lg shadow-xl"
+              />
+              
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
       <div className="grid md:grid-cols-2  place-items-center gap-8">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -102,6 +151,48 @@ const Hero = () => {
           >
             I'm an aspiring Data Analyst or Business Analyst with a strong passion for technology and innovation, constantly seeking ways to improve my skills and stay up-to-date with the latest trends in the industry.
           </motion.p>
+          
+          {/* Add your badge here */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 1 }}
+             className="mb-6 relative z-30"
+          >
+            <div className="flex flex-wrap gap-6">
+              {/* First Badge */}
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex flex-col items-center cursor-pointer"
+                onClick={() => handleBadgeClick('data')}
+              >
+                <img 
+                  src={badgeImage} 
+                  alt="Data Analytics Essentials" 
+                  className="w-24 h-24 md:w-20 md:h-20 rounded-lg shadow-lg"
+                />
+                {/* <p className="text-gray-400 text-sm mt-2 text-center">Data Analytics</p> */}
+              </motion.div>
+              
+              {/* Second Badge */}
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex flex-col items-center cursor-pointer"
+                onClick={() => handleBadgeClick('cloud')}
+              >
+                <img 
+                  src={badgeImage2} 
+                  alt="AWS Cloud Foundations" 
+                  className="w-24 h-24 md:w-20 md:h-20 rounded-lg shadow-lg"
+                />
+                {/* <p className="text-gray-400 text-sm mt-2 text-center">AWS Cloud</p> */}
+              </motion.div>
+            </div>
+          </motion.div>
+          
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
