@@ -171,7 +171,7 @@ const Hero = () => {
                 <img 
                   src={badgeImage} 
                   alt="Data Analytics Essentials" 
-                  className="w-24 h-24 md:w-20 md:h-20 rounded-lg shadow-lg"
+                  className="w-10 h-10 md:w-20 md:h-20 rounded-lg shadow-lg"
                 />
                 {/* <p className="text-gray-400 text-sm mt-2 text-center">Data Analytics</p> */}
               </motion.div>
@@ -186,7 +186,7 @@ const Hero = () => {
                 <img 
                   src={badgeImage2} 
                   alt="AWS Cloud Foundations" 
-                  className="w-24 h-24 md:w-20 md:h-20 rounded-lg shadow-lg"
+                  className="w-12 h-12 md:w-20 md:h-20 rounded-lg shadow-lg"
                 />
                 {/* <p className="text-gray-400 text-sm mt-2 text-center">AWS Cloud</p> */}
               </motion.div>
